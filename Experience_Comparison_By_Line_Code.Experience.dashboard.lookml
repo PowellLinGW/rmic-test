@@ -22,7 +22,7 @@
   - name: writtenprembyaccountingyearbyline
     title: Written Premium By Accounting Year By Line Code
     type: table
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [date.report_period_year,product.linecd]
     pivots: [product.linecd]
@@ -37,7 +37,7 @@
   - name: earnedpremiumbyaccountingyearbyline
     title: Earned Premium By Accounting Year By Line Code
     type: table
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [date.report_period_year,product.linecd]
     pivots: [product.linecd]
@@ -52,7 +52,7 @@
   - name: incurredlossbyaccountingyearbyline
     title: Incurred Loss By Accounting Year By Line Code
     type: table
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [date.report_period_year,product.linecd]
     pivots: [product.linecd]

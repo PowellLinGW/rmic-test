@@ -21,7 +21,7 @@
   - name: add_a_unique_name_1457624956748
     title: Carrier Experience Comparison By Line
     type: table
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [organization.carriercd, product.linecd]
     pivots: [organization.carriercd]
@@ -37,7 +37,7 @@
   - name: add_a_unique_name_1457625165554
     title: Carrier Experience Comparison By Line & Annual Statement Line
     type: table
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [organization.carriercd, product.linecd, product.annualstatementlinecd]
     pivots: [organization.carriercd]

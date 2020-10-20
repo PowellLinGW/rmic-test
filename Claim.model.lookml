@@ -1,4 +1,4 @@
-- connection: warehouse
+- connection: warehouse_rmic
 
 
 - include: "*.Claim.view.lookml"       # include claim views in this project

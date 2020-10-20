@@ -39,7 +39,7 @@
       reportperiodmonth: date.report_period_month
     title: Incurred Loss By Policy Year By Product
     type: table
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [policy.policyyear,product.productname]
     pivots: [product.productname]
@@ -56,7 +56,7 @@
       reportperiodmonth: date.report_period_month
     title: Incurred Loss By Accident Year By Product
     type: table
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [claim.lossyear, product.productname]
     pivots: [product.productname]
@@ -74,7 +74,7 @@
       product: product.productname
     title: Paid Loss By Accident Year By Accounting Year
     type: table
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [claim.lossyear, date.report_period_year]
     pivots: [date.report_period_year]
@@ -109,7 +109,7 @@
       product: product.productname
     title: Incurred Loss By Accident Year By Accounting Year
     type: table
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [claim.lossyear, date.report_period_year]
     pivots: [date.report_period_year]

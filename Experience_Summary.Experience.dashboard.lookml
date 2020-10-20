@@ -14,7 +14,7 @@
   - name: YTDLossRatioTrend
     title: YTD Loss Ratio Trend   
     type: looker_line
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [date.report_period_month]
     measures: [experience.incurred_loss_ratio_ytd, experience.paid_loss_ratio_ytd]
@@ -48,7 +48,7 @@
   - name: IncurredLossRatioByState
     title: Incurred loss Ratio By State
     type: looker_geo_choropleth
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [policy.statecd]
     measures: [experience.incurred_loss_ratio_ytd]
@@ -85,7 +85,7 @@
   - name: LossPremiumTrend
     title: MTD Loss & Premium Trend  
     type: looker_line
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [date.report_period_month]
     measures: [claim.paid_loss_mtd, claim.incurred_loss_mtd, claim.outstanding_reserve,
@@ -119,7 +119,7 @@
   - name: ProductExperienceSummary
     title: Product Experience Summary By Line - Annual Statement Line - YTD
     type: table
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [product.linecd, product.annualstatementlinecd]
     measures: [experience.incurred_loss_ratio_ytd, claim.incurred_loss_ytd, policy.earned_premium_ytd,
@@ -133,7 +133,7 @@
   - name: ProducerExperienceSummary
     title: Producer Experience Summary - Earned Premium > 1 Million - YTD
     type: looker_scatter
-    model: Experience
+    model: Experience_rmic
     explore: experience
     dimensions: [producer.producercd]
     measures: [experience.incurred_loss_ratio_ytd, claim.incurred_loss_ytd, policy.earned_premium_ytd,

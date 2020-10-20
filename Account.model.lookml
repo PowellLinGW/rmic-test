@@ -1,4 +1,4 @@
-- connection: warehouse
+- connection: warehouse_rmic
 
 
 - include: "*.Account.view.lookml"       # include account views in this project
